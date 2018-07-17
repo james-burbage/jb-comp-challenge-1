@@ -2,10 +2,12 @@ body {
   background-color: rgb(207 207 207);
   font-family: Helvetica;
   margin: 0.7rem;
+  max-width: 1440px;
+  overflow: auto;
 }
 
 .grid {
-  height: 47rem;
+  height: 50rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -55,6 +57,24 @@ button:hover {
   grid-area: grid3;
 }
 
+.right-arrow-img {
+  position: absolute; 
+  transform: translate(29rem, 11rem);
+  margin: 1rem;
+}
+
+.left-arrow-img {
+  position: relative;
+  transform: translate(0rem, 17rem);
+  margin: 1rem;
+}
+
+.ellipsis-img {
+  position: relative;
+  transform: translate(29rem, -1rem);
+  margin: 1rem;
+}
+
 .grid4 {
   background-color: #00BCD4;
   grid-area: grid4;
@@ -99,6 +119,8 @@ button {
   font-weight: 800;
   margin-right: 1em;
   padding: 0.6rem;
+  width: 9rem;
+  height: 3rem;
 }
 
 h1 {
@@ -129,19 +151,17 @@ p {
   width: 70px;
 }
 
-@media only screen and (max-width: 1100px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 17rem 17rem 17rem 17rem 17rem 17rem 17rem 17rem;
-    grid-template-areas: 
-      "grid3 grid3"
-      "grid3 grid3"
-      "grid3 grid3"
-      "grid1 grid1"
-      "grid2 grid4"
-      "grid5 grid6"
-      "grid7 grid8"
-      "grid9 ."
+@media only screen and (max-width: 1400px) {
+  .right-arrow-img {
+    display: none;
+  }
+
+  .left-arrow-img {
+    display: none;
+  }
+
+  .ellipsis-img {
+    display: none;
   }
 }
 
@@ -157,21 +177,23 @@ p {
       "grid2 grid4"
       "grid5 grid6"
       "grid7 grid8"
-      "grid9 ."
+      "grid9 grid9"
   }
 
   p {
     margin: 9.5em auto 0;
   }
-
 }
+
 @media only screen and (max-width: 540px) {
   .grid {
     height: 30rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 17rem 17rem 17rem 17rem 17rem 17rem 17rem 17rem 17rem;
+    grid-template-rows: 17rem 17rem 17rem 17rem 17rem 17rem 17rem 17rem 17rem 17rem 17rem;
     grid-template-areas: 
       "grid3"
+      "grid3"
+      "grid1"
       "grid1"
       "grid2"
       "grid4"
@@ -180,5 +202,9 @@ p {
       "grid7"
       "grid8"
       "grid9"
+  }
+
+  button {
+    margin: 2rem 2rem 0 0;
   }
 }
