@@ -21,5 +21,5 @@ Create a repo on github :octocat: for your work with following naming construct:
 Include a README with the repo that provides a brief overview of the project, and images of both the original comp and your version.
 Push your final work to github pages
 
-[my-screen](images/my-screen.jpg)
-[your-screen](images/your-screen.jpg)
+[My Comp](images/my-comp.jpg)
+[Original Comp](images/original-comp.jpg)
