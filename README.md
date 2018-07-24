@@ -22,7 +22,9 @@ Include a README with the repo that provides a brief overview of the project, an
 Push your final work to github pages.
 
 Original Comp
+
 <img src="images/original-comp.jpg">
 
 My Comp
+
 <img src="images/my-comp.jpg">
